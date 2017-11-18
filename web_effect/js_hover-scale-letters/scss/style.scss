@@ -1,0 +1,54 @@
+// ---- Variables
+
+$bg-color: #e74c3c;
+$white-color: #fff; 
+
+
+// ---- Basic Style
+html, body {
+  height: 100%;
+}
+
+body {
+  background: $bg-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: 'Passion One', cursive;
+}
+
+
+// ---- Animated Letters
+.scale {
+  font-size: 10vw;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: $white-color;
+  cursor: pointer;
+
+  span {
+    display: inline-block;
+    transition: transform 0.1s;    
+  
+    &:hover {
+      animation: rotate-scale-up 0.50s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+      z-index: 1;      
+    }
+  }
+}
+
+// ---- Rotate Scale Animation
+
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(5) rotateZ(0);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}

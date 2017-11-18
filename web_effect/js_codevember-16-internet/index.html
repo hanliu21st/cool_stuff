@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Codevember 16 - Internet</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="window loading">
+	<div class="toolbar">
+		<a href="home" class="toolbar-home">&larr;</a>
+	</div>
+	<div class="loading-wrapper"></div>
+	<div class="site-wrapper"></div>
+</div>
+
+<canvas id="bg-canvas"></canvas>
+
+<script type="text/template" id="home">
+	<div class="home">
+		<header>
+			<h1>Welcome to the WWW.</h1>
+			<p>Use those pugdy little fingers to click on things.</p>
+		</header>
+		<section class="gif-link-wrap">
+				<a href="cats" class="link-gif">
+					<img src="https://media3.giphy.com/media/3mq6k5fqe5g8o/giphy.gif" alt="">
+						<span class="title">Cats</span>
+				</a>
+	
+				<a href="futurama" class="link-gif">
+					<img src="https://media.giphy.com/media/5uF0PN4Dai6SA/giphy.gif" alt="">
+						<span class="title">Futurama</span>
+				</a>
+	
+				<a href="coffee" class="link-gif">
+					<img src="https://media.giphy.com/media/Rmu0SUVH8l1du/giphy.gif" alt="">
+						<span class="title">Coffee</span>
+				</a>
+	
+				<a href="trump" class="link-gif">
+					<img src="https://media.giphy.com/media/Qjmp5vKEERPyw/giphy.gif" alt="">
+						<span class="title">Trump</span>
+				</a>
+	
+				<a href="apple" class="link-gif">
+					<img src="https://media.giphy.com/media/ep6HgbfLJKEUg/giphy.gif" alt="">
+						<span class="title">Apple</span>
+				</a>
+	
+				<a href="foodporn" class="link-gif">
+					<img src="https://media.giphy.com/media/3o7TKRikxfbfMT6Uj6/giphy.gif" alt="">
+						<span class="title">Food porn</span>
+				</a>
+		</section>
+	
+		<footer>
+			~ By Lewi ~
+		</footer>
+	</div>
+</script>
+
+<script type="text/template" id="cats">
+	<section class="cats">
+		<canvas id="cats-canvas"></canvas>
+		<div class="container">
+			<h1>MEW.</h1>
+			<br/>
+			<p>
+				I want to believe. 
+			</p>
+			<p>
+				Are our beloved pets secretly alien life forms placed in our homes to spy on us? Are they the masters of some secret government agency plotting to rule the world?
+			</p>
+				<br/>
+				<br/>
+				<p>
+					P.S. Sorry about messed up NYAN CAT, lots to do in not alot of time hihihi. :P<br/>
+					- Lewi <3
+				</p>
+		</div>
+	</section>
+	
+	<script>new Cats();</script>
+</script>
+
+<script type="text/template" id="futurama">
+	<div class="futurama">
+		<header>
+			Welcome <span>to the</span> world of <span>tomorrow!</span>
+			<canvas id="futurama-canvas"></canvas>
+			<p>Dear Fox,</p>
+			<p>Please bring Futurama back. It was hands down the best series of all time.</p>
+			<p>Period.</p>
+			<h2>Sign the petition.</h2>
+			<form>
+				<input type="text" placeholder="your name">
+				<input type="text" placeholder="your planet">
+				<button>This form actually does nothing lol.</button>
+			</form>
+		</header>
+	</div>
+	
+	<script>
+		new Futurama();
+	</script>
+</script>
+
+<script type="text/template" id="coffee">
+	<div class="coffee">
+		<h1>Coffee</h1>
+		<p class="quote">
+			Sweet and savory tides<br/>
+			Fill the self-perpetuating void<br/>
+			Spinning spokes of inspiration<br/>
+			Distillate of jungle and earth
+		</p>
+		<p class="author">
+			- Christian Reid
+		</p>
+	</div>
+</script>
+
+<script type="text/template" id="trump">
+	<div class="trump">
+		<header>
+			<h1>Trump</h1>
+			<p>/trʌmp/</p>
+			<p><i>noun</i></p>
+			<p>Break wind audibly.</p>
+		</header>
+	
+		<iframe width="530" height="315" src="https://www.youtube.com/embed/ekz-WVsRGSo?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+	
+		<iframe width="530" height="315" src="https://www.youtube.com/embed/Q3_F5_JPQA0?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+	
+		<iframe width="530" height="315" src="https://www.youtube.com/embed/WLYHu0AG8GI?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+	
+		<div class="stats">
+			<div>
+				<h2>Trump</h2>
+				<p>
+					Hands: Small<br/>
+					IQ: 13<br/>
+					Makeup: "None"<br/>
+					Catchphrase: Yeah i'm not typing that.
+				</p>
+			</div>
+			<div>
+				<h2>Hillary</h2>
+				<p>
+					Superpower: Faint<br/>
+					IQ: 14<br/>
+					Favorite form of communication: <nobr>E-mail</nobr>
+				</p>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="apple">
+	<div class="apple">
+		<div class="image">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149229/iphonex.png" alt="">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149229/iphone_x2.png" alt="">
+		</div>
+		<div class="form">
+			<h1>Buy iPhone XVII</h1>
+			<p class="intro">Our vision has always been to create an iPhone that is entirely screen <span>Except the notch</span>. One so immersive the device itself disappears into the experience. And so intelligent it can respond to a tap, your voice, and even a glance <span>Your Mum can unlock it too.</span>. With iPhone X, that vision is now a reality. Say hello to the future. <span>And say goodbye to your savings.</span></p>
+
+			<p>How would you like to pay?</p>
+			<label class="radio">
+				<input type="radio" name="pay">
+				<span>
+					Your first born child
+				</span>
+			</label>
+			<label class="radio">
+				<input type="radio" name="pay">
+				<span>
+					2<sup>nd</sup> mortgage
+				</span>
+			</label>
+			<label class="radio">
+				<input type="radio" name="pay">
+				<span>
+					Try HUMANCENTiPAD
+				</span>
+			</label>
+			<label class="radio">
+				<input type="radio" name="pay">
+				<span>
+					Blow Jony Ive
+				</span>
+			</label>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="foodporn">
+	<div class="food-porn">
+		<div class="xl cheese">ADD CHEESE!</div>
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149229/200w_d.gif" alt="">
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149229/food-porn-pizza-perfect-pizzas.jfif" alt="">
+		<div class="xl slurp">SLUUURP!</div>
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149229/LlVxfMs.jpg" alt="">
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149229/wtRbzFS.jpg" alt="">
+		<div class="xl cheese">SIZZLE.</div>
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149229/giphy-downsized.gif" alt="">
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149229/tmg-article_default_mobile.jpg" alt="">
+	</div>
+</script>
+
+<footer class="site-footer">
+	<a href="//twitter.com/lewitje" target="_blank">by @Lewitje</a>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
